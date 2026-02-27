@@ -105,21 +105,21 @@ export default function App() {
               {/* Polaroid 1 */}
               <div className="polaroid relative transform rotate-3">
                 <div className="pin"></div>
-                <img src="/Screenshot 2026-02-27 213153.png" alt="Taxi Service Website" className="w-full h-auto border border-gray-200" referrerPolicy="no-referrer" />
+                <img src="./public/Screenshot 2026-02-27 213153.png" alt="Taxi Service Website" className="w-full h-auto border border-gray-200" referrerPolicy="no-referrer" />
                 <p className="font-handwriting text-xl text-center mt-4 text-gray-700">Taxi Service Web</p>
               </div>
               
               {/* Polaroid 2 */}
               <div className="polaroid relative transform -rotate-2 mt-4 md:mt-0">
                 <div className="pin bg-blue-500"></div>
-                <img src="/Screenshot 2026-02-27 213236.png" alt="Client Portfolio" className="w-full h-auto border border-gray-200" referrerPolicy="no-referrer" />
+                <img src="./public/Screenshot 2026-02-27 213236.png" alt="Client Portfolio" className="w-full h-auto border border-gray-200" referrerPolicy="no-referrer" />
                 <p className="font-handwriting text-xl text-center mt-4 text-gray-700">Client Portfolio</p>
               </div>
 
               {/* Polaroid 3 */}
               <div className="polaroid relative transform rotate-1 mt-4 md:mt-0">
                 <div className="pin bg-green-500"></div>
-                <img src="/Screenshot 2026-02-27 213350.png" alt="Sabmohmaya Portfolio" className="w-full h-auto border border-gray-200" referrerPolicy="no-referrer" />
+                <img src="./public/Screenshot 2026-02-27 213350.png" alt="Sabmohmaya Portfolio" className="w-full h-auto border border-gray-200" referrerPolicy="no-referrer" />
                 <p className="font-handwriting text-xl text-center mt-4 text-gray-700">Sabmohmaya Port</p>
               </div>
             </div>
@@ -142,7 +142,7 @@ export default function App() {
               {/* Project 1: Taxi Service */}
               <div className="bg-[#1a1a1a] p-4 rounded-lg shadow-inner border border-gray-600 flex flex-col md:flex-row gap-6 items-center">
                 <div className="w-full md:w-1/2 border-4 border-gray-800 rounded shadow-lg bg-black p-2">
-                  <img src="/Screenshot 2026-02-27 213153.png" alt="Taxi Service Project" className="w-full h-auto opacity-90 object-contain aspect-video" referrerPolicy="no-referrer" />
+                  <img src="./public/Screenshot 2026-02-27 213153.png" alt="Taxi Service Project" className="w-full h-auto opacity-90 object-contain aspect-video" referrerPolicy="no-referrer" />
                 </div>
                 <div className="w-full md:w-1/2 text-gray-300 font-typewriter space-y-4">
                   <h3 className="text-xl font-bold text-green-400">&gt; TAXI_SERVICE.exe</h3>
