@@ -15,13 +15,16 @@ import {
   Camera,
   Coffee,
   PenTool,
-  MessageSquare
+  MessageSquare,
+  ExternalLink,
+  Share2,
+  Github
 } from "lucide-react";
 
 const imgTaxiService = "https://cdn.discordapp.com/attachments/1258797575536906363/1477365637025366037/Screenshot_2026-02-27_213153.png?ex=69a47f77&is=69a32df7&hm=f9f014c53185e7b8c572f6f78b296201b80db6b62263904ddc846ad0acf3e0da&";
 const imgClientPortfolio = "https://cdn.discordapp.com/attachments/1258797575536906363/1477365636345892974/Screenshot_2026-02-27_213236.png?ex=69a47f77&is=69a32df7&hm=68ef6cd05fccece9ec7dd1b1523a64a6b3aa0758b300e47413c481f5d5239664&";
-const imgSabmohmaya = "https://cdn.discordapp.com/attachments/1258797575536906363/1477365635607691378/Screenshot_2026-02-27_213350.png?ex=69a47f77&is=69a32df7&hm=0fbaa64a1a27c17582a20588d48d0583a073e3274fa1dfc1574bf46096faf370&";
-const imgPortfolioIdea = "https://cdn.discordapp.com/attachments/1258797575536906363/1477366579468570667/Screenshot_2026-02-28_232947.png?ex=69a48058&is=69a32ed8&hm=1a095fe6d58a5a5bfa25e0fe7bd7c4f10a7415db26b3babd4008f33a99091c7d";
+const imgSabmohmaya = "https://cdn.discordapp.com/attachments/1258797575536906363/1477378863112913039/image.png?ex=69a48bc9&is=69a33a49&hm=b7304a5ba10d5bb0b6565e91e63a8cdf048be00c967e01a2bd4bd7fc046d1dd3&";
+const imgPortfolioIdea = "https://cdn.discordapp.com/attachments/1258797575536906363/1477378862613659860/image.png?ex=69a48bc9&is=69a33a49&hm=34d4191a8ef6707baccccda0f2f5d7ce2ce4deeaffc316e4683d968c942880d7&";
 
 export default function App() {
   const scrollTo = (id: string) => {
@@ -106,27 +109,34 @@ export default function App() {
               <h2 className="text-2xl font-sans font-bold text-gray-800 uppercase tracking-widest text-shadow-sm">Past Work</h2>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mt-4">
               {/* Polaroid 1 */}
-              <div className="polaroid relative transform rotate-3">
+              <a href="https://www.thefaridabadtaxiservice.com/" target="_blank" rel="noopener noreferrer" className="polaroid relative transform rotate-3 hover:scale-105 hover:rotate-1 transition-all duration-300 block cursor-pointer">
                 <div className="pin"></div>
                 <img src={imgTaxiService} alt="Taxi Service Website" className="w-full h-auto border border-gray-200" referrerPolicy="no-referrer" />
                 <p className="font-handwriting text-xl text-center mt-4 text-gray-700">Taxi Service Web</p>
-              </div>
+              </a>
               
               {/* Polaroid 2 */}
-              <div className="polaroid relative transform -rotate-2 mt-4 md:mt-0">
+              <a href="https://mold-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" className="polaroid relative transform -rotate-2 mt-4 sm:mt-0 hover:scale-105 hover:-rotate-1 transition-all duration-300 block cursor-pointer">
                 <div className="pin bg-blue-500"></div>
-                <img src={imgClientPortfolio} alt="Client Portfolio" className="w-full h-auto border border-gray-200" referrerPolicy="no-referrer" />
-                <p className="font-handwriting text-xl text-center mt-4 text-gray-700">Client Portfolio</p>
-              </div>
+                <img src={imgClientPortfolio} alt="Mold Portfolio" className="w-full h-auto border border-gray-200" referrerPolicy="no-referrer" />
+                <p className="font-handwriting text-xl text-center mt-4 text-gray-700">Mold Portfolio</p>
+              </a>
 
               {/* Polaroid 3 */}
-              <div className="polaroid relative transform rotate-1 mt-4 md:mt-0">
+              <a href="https://sabmohmaya.info/" target="_blank" rel="noopener noreferrer" className="polaroid relative transform rotate-1 mt-4 lg:mt-0 hover:scale-105 hover:rotate-0 transition-all duration-300 block cursor-pointer">
+                <div className="pin bg-red-500"></div>
+                <img src={imgPortfolioIdea} alt="Portfolio Idea" className="w-full h-auto border border-gray-200" referrerPolicy="no-referrer" />
+                <p className="font-handwriting text-xl text-center mt-4 text-gray-700">Portfolio Idea</p>
+              </a>
+
+              {/* Polaroid 4 */}
+              <a href="http://sabmohmaya.vercel.app/" target="_blank" rel="noopener noreferrer" className="polaroid relative transform -rotate-3 mt-4 lg:mt-0 hover:scale-105 hover:-rotate-1 transition-all duration-300 block cursor-pointer" style={{ padding: '4px 4px 24px 4px' }}>
                 <div className="pin bg-green-500"></div>
                 <img src={imgSabmohmaya} alt="Sabmohmaya Portfolio" className="w-full h-auto border border-gray-200" referrerPolicy="no-referrer" />
-                <p className="font-handwriting text-xl text-center mt-4 text-gray-700">Sabmohmaya Port</p>
-              </div>
+                <p className="font-handwriting text-xl text-center mt-2 text-gray-700">Sabmohmaya Port</p>
+              </a>
             </div>
           </div>
         </section>
@@ -187,7 +197,7 @@ export default function App() {
                     It features a clean, minimalist layout with striking typography and 
                     subtle interactions to highlight creative work effectively.
                   </p>
-                  <button className="btn-glossy px-4 py-2 text-xs font-sans font-bold uppercase mt-4">View Details</button>
+                  <a href="https://sabmohmaya.info/" target="_blank" rel="noopener noreferrer" className="btn-glossy px-4 py-2 text-xs font-sans font-bold uppercase mt-4 inline-block">View Details</a>
                 </div>
               </div>
             </div>
@@ -195,46 +205,69 @@ export default function App() {
         </section>
 
         {/* Connect Me: Physical Business Card */}
-        <section id="connect" className="scroll-mt-24 pb-12">
-          <div className="relative max-w-md mx-auto">
+        <section id="connect" className="scroll-mt-24 pb-24 pt-12">
+          <div className="relative max-w-2xl mx-auto px-4">
             {/* Card Shadow */}
             <div className="absolute inset-0 bg-black/40 transform translate-y-4 translate-x-2 blur-sm rounded-sm"></div>
             
             {/* The Card */}
-            <div className="relative bg-[#f4f1ea] p-8 border border-gray-300 rounded-sm transform rotate-1">
+            <div className="relative bg-[#f4f1ea] p-8 md:p-12 border border-gray-300 rounded-sm transform rotate-1">
               {/* Card Texture/Noise */}
               <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }}></div>
               
-              <div className="text-center mb-8 border-b-2 border-gray-800 pb-4">
-                <h2 className="text-3xl font-serif font-bold text-gray-900 tracking-widest uppercase">Polaristika</h2>
-                <p className="text-sm font-sans text-gray-600 tracking-widest mt-1">Custom Portfolio Creator</p>
+              <div className="text-center mb-10 border-b-2 border-gray-800 pb-6 relative z-10">
+                <h2 className="text-4xl font-serif font-bold text-gray-900 tracking-widest uppercase">Polaristika</h2>
+                <p className="text-sm font-sans text-gray-600 tracking-widest mt-2">Custom Portfolio Creator</p>
               </div>
               
-              <div className="space-y-6 font-sans text-gray-800 py-4">
-                <div className="flex flex-col items-center gap-3 text-center">
-                  <div className="w-12 h-12 rounded-full bg-[#5865F2] flex items-center justify-center text-white shadow-inner border-2 border-gray-800">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10">
+                {/* Button 1: GitHub */}
+                <a href="https://github.com/polaristika" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 p-4 bg-[#e8e4d9] border border-gray-400 shadow-[3px_3px_0_#4b5563] hover:shadow-[5px_5px_0_#4b5563] hover:-translate-y-1 hover:-translate-x-1 active:shadow-[0_0_0_#4b5563] active:translate-y-0 active:translate-x-0 transition-all duration-200">
+                  <div className="w-12 h-12 bg-gray-800 text-[#f4f1ea] flex items-center justify-center rounded-sm shadow-inner">
+                    <Github className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <span className="block text-sm font-bold text-gray-800 tracking-widest uppercase">GitHub</span>
+                    <span className="block text-xs font-typewriter text-gray-600">View Code</span>
+                  </div>
+                </a>
+
+                {/* Button 2: Email */}
+                <a href="mailto:hello@example.com" className="group flex items-center gap-4 p-4 bg-[#e8e4d9] border border-gray-400 shadow-[3px_3px_0_#4b5563] hover:shadow-[5px_5px_0_#4b5563] hover:-translate-y-1 hover:-translate-x-1 active:shadow-[0_0_0_#4b5563] active:translate-y-0 active:translate-x-0 transition-all duration-200">
+                  <div className="w-12 h-12 bg-gray-800 text-[#f4f1ea] flex items-center justify-center rounded-sm shadow-inner">
+                    <Mail className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <span className="block text-sm font-bold text-gray-800 tracking-widest uppercase">Email</span>
+                    <span className="block text-xs font-typewriter text-gray-600">Drop a line</span>
+                  </div>
+                </a>
+
+                {/* Button 3: Discord */}
+                <button onClick={() => { navigator.clipboard.writeText('polaristika'); alert('Discord ID copied!'); }} className="group flex items-center gap-4 p-4 bg-[#e8e4d9] border border-gray-400 shadow-[3px_3px_0_#4b5563] hover:shadow-[5px_5px_0_#4b5563] hover:-translate-y-1 hover:-translate-x-1 active:shadow-[0_0_0_#4b5563] active:translate-y-0 active:translate-x-0 transition-all duration-200 text-left w-full">
+                  <div className="w-12 h-12 bg-gray-800 text-[#f4f1ea] flex items-center justify-center rounded-sm shadow-inner">
                     <MessageSquare className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-1">Discord</p>
-                    <span className="font-typewriter text-xl font-bold bg-gray-200 px-3 py-1 rounded shadow-inner">polaristika</span>
+                    <span className="block text-sm font-bold text-gray-800 tracking-widest uppercase">Discord</span>
+                    <span className="block text-xs font-typewriter text-gray-600">polaristika</span>
                   </div>
-                </div>
-                <p className="text-center font-handwriting text-xl text-gray-600 mt-4">
-                  Reach out to start building your dream portfolio!
-                </p>
-              </div>
-
-              <div className="mt-4 pt-4 border-t border-gray-300 flex justify-center gap-4">
-                <button 
-                  className="btn-glossy px-6 py-2 text-sm font-bold"
-                  onClick={() => {
-                    navigator.clipboard.writeText('polaristika');
-                    alert('Discord ID copied to clipboard!');
-                  }}
-                >
-                  Copy Discord ID
                 </button>
+
+                {/* Button 4: Share */}
+                <button onClick={() => { navigator.clipboard.writeText(window.location.href); alert('Portfolio link copied!'); }} className="group flex items-center gap-4 p-4 bg-[#e8e4d9] border border-gray-400 shadow-[3px_3px_0_#4b5563] hover:shadow-[5px_5px_0_#4b5563] hover:-translate-y-1 hover:-translate-x-1 active:shadow-[0_0_0_#4b5563] active:translate-y-0 active:translate-x-0 transition-all duration-200 text-left w-full">
+                  <div className="w-12 h-12 bg-gray-800 text-[#f4f1ea] flex items-center justify-center rounded-sm shadow-inner">
+                    <Share2 className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <span className="block text-sm font-bold text-gray-800 tracking-widest uppercase">Share</span>
+                    <span className="block text-xs font-typewriter text-gray-600">Copy Link</span>
+                  </div>
+                </button>
+              </div>
+              
+              <div className="mt-10 pt-6 border-t border-gray-400 text-center relative z-10">
+                 <p className="font-handwriting text-2xl text-gray-700 transform -rotate-2">Let's build something amazing together!</p>
               </div>
             </div>
           </div>
