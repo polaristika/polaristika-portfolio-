@@ -18,9 +18,10 @@ import {
   MessageSquare
 } from "lucide-react";
 
-import imgTaxiService from "./assets/Screenshot 2026-02-27 213153.png";
-import imgClientPortfolio from "./assets/Screenshot 2026-02-27 213236.png";
-import imgSabmohmaya from "./assets/Screenshot 2026-02-27 213350.png";
+const imgTaxiService = "https://cdn.discordapp.com/attachments/1258797575536906363/1477365637025366037/Screenshot_2026-02-27_213153.png?ex=69a47f77&is=69a32df7&hm=f9f014c53185e7b8c572f6f78b296201b80db6b62263904ddc846ad0acf3e0da&";
+const imgClientPortfolio = "https://cdn.discordapp.com/attachments/1258797575536906363/1477365636345892974/Screenshot_2026-02-27_213236.png?ex=69a47f77&is=69a32df7&hm=68ef6cd05fccece9ec7dd1b1523a64a6b3aa0758b300e47413c481f5d5239664&";
+const imgSabmohmaya = "https://cdn.discordapp.com/attachments/1258797575536906363/1477365635607691378/Screenshot_2026-02-27_213350.png?ex=69a47f77&is=69a32df7&hm=0fbaa64a1a27c17582a20588d48d0583a073e3274fa1dfc1574bf46096faf370&";
+const imgPortfolioIdea = "https://cdn.discordapp.com/attachments/1258797575536906363/1477366579468570667/Screenshot_2026-02-28_232947.png?ex=69a48058&is=69a32ed8&hm=1a095fe6d58a5a5bfa25e0fe7bd7c4f10a7415db26b3babd4008f33a99091c7d";
 
 export default function App() {
   const scrollTo = (id: string) => {
@@ -171,6 +172,22 @@ export default function App() {
                     captures the client's vision, utilizing smooth animations and a tailored layout.
                   </p>
                   <a href="http://sabmohmaya.vercel.app/" target="_blank" rel="noopener noreferrer" className="btn-glossy px-4 py-2 text-xs font-sans font-bold uppercase mt-4 inline-block">View Details</a>
+                </div>
+              </div>
+
+              {/* Project 3: Portfolio Idea */}
+              <div className="bg-[#1a1a1a] p-4 rounded-lg shadow-inner border border-gray-600 flex flex-col md:flex-row gap-6 items-center">
+                <div className="w-full md:w-1/2 border-4 border-gray-800 rounded shadow-lg bg-black p-2">
+                  <img src={imgPortfolioIdea} alt="Portfolio Idea" className="w-full h-auto opacity-90 object-contain aspect-video" referrerPolicy="no-referrer" />
+                </div>
+                <div className="w-full md:w-1/2 text-gray-300 font-typewriter space-y-4">
+                  <h3 className="text-xl font-bold text-green-400">&gt; PORTFOLIO_IDEA.exe</h3>
+                  <p className="text-sm leading-relaxed">
+                    A conceptual portfolio design showcasing modern UI/UX principles. 
+                    It features a clean, minimalist layout with striking typography and 
+                    subtle interactions to highlight creative work effectively.
+                  </p>
+                  <button className="btn-glossy px-4 py-2 text-xs font-sans font-bold uppercase mt-4">View Details</button>
                 </div>
               </div>
             </div>
