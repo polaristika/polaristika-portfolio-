@@ -109,7 +109,7 @@ export default function App() {
               <h2 className="text-2xl font-sans font-bold text-gray-800 uppercase tracking-widest text-shadow-sm">Past Work</h2>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mt-4 items-start">
               {/* Polaroid 1 */}
               <a href="https://www.thefaridabadtaxiservice.com/" target="_blank" rel="noopener noreferrer" className="polaroid relative transform rotate-3 hover:scale-105 hover:rotate-1 transition-all duration-300 block cursor-pointer">
                 <div className="pin"></div>
@@ -132,10 +132,10 @@ export default function App() {
               </a>
 
               {/* Polaroid 4 */}
-              <a href="http://sabmohmaya.vercel.app/" target="_blank" rel="noopener noreferrer" className="polaroid relative transform -rotate-3 mt-4 lg:mt-0 hover:scale-105 hover:-rotate-1 transition-all duration-300 block cursor-pointer" style={{ padding: '4px 4px 24px 4px' }}>
+              <a href="http://sabmohmaya.vercel.app/" target="_blank" rel="noopener noreferrer" className="polaroid relative transform -rotate-3 mt-4 lg:mt-0 hover:scale-105 hover:-rotate-1 transition-all duration-300 block cursor-pointer">
                 <div className="pin bg-green-500"></div>
                 <img src={imgSabmohmaya} alt="Sabmohmaya Portfolio" className="w-full h-auto border border-gray-200" referrerPolicy="no-referrer" />
-                <p className="font-handwriting text-xl text-center mt-2 text-gray-700">Sabmohmaya Port</p>
+                <p className="font-handwriting text-xl text-center mt-4 text-gray-700">Sabmohmaya Port</p>
               </a>
             </div>
           </div>
@@ -233,7 +233,7 @@ export default function App() {
                 </a>
 
                 {/* Button 2: Email */}
-                <a href="mailto:hello@example.com" className="group flex items-center gap-4 p-4 bg-[#e8e4d9] border border-gray-400 shadow-[3px_3px_0_#4b5563] hover:shadow-[5px_5px_0_#4b5563] hover:-translate-y-1 hover:-translate-x-1 active:shadow-[0_0_0_#4b5563] active:translate-y-0 active:translate-x-0 transition-all duration-200">
+                <a href="mailto:polaristika@gmail.com" className="group flex items-center gap-4 p-4 bg-[#e8e4d9] border border-gray-400 shadow-[3px_3px_0_#4b5563] hover:shadow-[5px_5px_0_#4b5563] hover:-translate-y-1 hover:-translate-x-1 active:shadow-[0_0_0_#4b5563] active:translate-y-0 active:translate-x-0 transition-all duration-200">
                   <div className="w-12 h-12 bg-gray-800 text-[#f4f1ea] flex items-center justify-center rounded-sm shadow-inner">
                     <Mail className="w-6 h-6" />
                   </div>
