@@ -21,10 +21,10 @@ import {
   Github
 } from "lucide-react";
 
-const imgTaxiService = "https://cdn.discordapp.com/attachments/1258797575536906363/1477365637025366037/Screenshot_2026-02-27_213153.png?ex=69a47f77&is=69a32df7&hm=f9f014c53185e7b8c572f6f78b296201b80db6b62263904ddc846ad0acf3e0da&";
-const imgClientPortfolio = "https://cdn.discordapp.com/attachments/1258797575536906363/1477365636345892974/Screenshot_2026-02-27_213236.png?ex=69a47f77&is=69a32df7&hm=68ef6cd05fccece9ec7dd1b1523a64a6b3aa0758b300e47413c481f5d5239664&";
-const imgSabmohmaya = "https://cdn.discordapp.com/attachments/1258797575536906363/1477378863112913039/image.png?ex=69a48bc9&is=69a33a49&hm=b7304a5ba10d5bb0b6565e91e63a8cdf048be00c967e01a2bd4bd7fc046d1dd3&";
-const imgPortfolioIdea = "https://cdn.discordapp.com/attachments/1258797575536906363/1477378862613659860/image.png?ex=69a48bc9&is=69a33a49&hm=34d4191a8ef6707baccccda0f2f5d7ce2ce4deeaffc316e4683d968c942880d7&";
+const imgTaxiService = "https://raw.githubusercontent.com/polaristika/polaristika-portfolio-/main/src/assets/Screenshot%202026-02-27%20213153.png";
+const imgClientPortfolio = "https://raw.githubusercontent.com/polaristika/polaristika-portfolio-/main/src/assets/Screenshot%202026-02-27%20213236.png";
+const imgSabmohmaya = "https://raw.githubusercontent.com/polaristika/polaristika-portfolio-/main/src/assets/Screenshot%202026-02-27%20213350.png";
+const imgPortfolioIdea = "https://raw.githubusercontent.com/polaristika/polaristika-portfolio-/main/src/assets/Screenshot%202026-03-01%20002543.png";
 
 export default function App() {
   const scrollTo = (id: string) => {
@@ -125,7 +125,7 @@ export default function App() {
               </a>
 
               {/* Polaroid 3 */}
-              <a href="https://sabmohmaya.info/" target="_blank" rel="noopener noreferrer" className="polaroid relative transform rotate-1 mt-4 lg:mt-0 hover:scale-105 hover:rotate-0 transition-all duration-300 block cursor-pointer">
+              <a href="https://sabmohamaya.netlify.app//" target="_blank" rel="noopener noreferrer" className="polaroid relative transform rotate-1 mt-4 lg:mt-0 hover:scale-105 hover:rotate-0 transition-all duration-300 block cursor-pointer">
                 <div className="pin bg-red-500"></div>
                 <img src={imgPortfolioIdea} alt="Portfolio Idea" className="w-full h-auto border border-gray-200" referrerPolicy="no-referrer" />
                 <p className="font-handwriting text-xl text-center mt-4 text-gray-700">Portfolio Idea</p>
@@ -197,7 +197,7 @@ export default function App() {
                     It features a clean, minimalist layout with striking typography and 
                     subtle interactions to highlight creative work effectively.
                   </p>
-                  <a href="https://sabmohmaya.info/" target="_blank" rel="noopener noreferrer" className="btn-glossy px-4 py-2 text-xs font-sans font-bold uppercase mt-4 inline-block">View Details</a>
+                  <a href="https://sabmohamaya.netlify.app/" target="_blank" rel="noopener noreferrer" className="btn-glossy px-4 py-2 text-xs font-sans font-bold uppercase mt-4 inline-block">View Details</a>
                 </div>
               </div>
             </div>
