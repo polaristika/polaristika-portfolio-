@@ -24,7 +24,7 @@ import {
 import imgTaxiService from "./assets/Screenshot 2026-02-27 213153.png";
 import imgClientPortfolio from "./assets/Screenshot 2026-02-27 213236.png";
 import imgSabmohmaya from "./assets/Screenshot 2026-02-27 213350.png";
-const imgPortfolioIdea = "https://raw.githubusercontent.com/polaristika/polaristika-portfolio-/main/src/assets/Screenshot%202026-03-01%20002543.png";
+import imgPortfolioIdea from "./assets/Screenshot 2026-03-01 002543.png";
 
 export default function App() {
   const scrollTo = (id: string) => {
