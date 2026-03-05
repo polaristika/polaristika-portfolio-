@@ -21,9 +21,9 @@ import {
   Github
 } from "lucide-react";
 
-const imgTaxiService = "https://raw.githubusercontent.com/polaristika/polaristika-portfolio-/main/src/assets/Screenshot%202026-02-27%20213153.png";
-const imgClientPortfolio = "https://raw.githubusercontent.com/polaristika/polaristika-portfolio-/main/src/assets/Screenshot%202026-02-27%20213236.png";
-const imgSabmohmaya = "https://raw.githubusercontent.com/polaristika/polaristika-portfolio-/main/src/assets/Screenshot%202026-02-27%20213350.png";
+import imgTaxiService from "./assets/Screenshot 2026-02-27 213153.png";
+import imgClientPortfolio from "./assets/Screenshot 2026-02-27 213236.png";
+import imgSabmohmaya from "./assets/Screenshot 2026-02-27 213350.png";
 const imgPortfolioIdea = "https://raw.githubusercontent.com/polaristika/polaristika-portfolio-/main/src/assets/Screenshot%202026-03-01%20002543.png";
 
 export default function App() {
